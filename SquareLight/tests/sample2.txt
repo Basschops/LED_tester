@@ -1,0 +1,8 @@
+1000
+switch 109,360 through 331,987
+switch 8,315 through 550,764
+tufn on 143,397 through 543,642
+turn on 867,334 through 914,847
+switch 618,963 through 737,996
+turn on 981,695 through 992,754
+switcy 166,675 through 329,961

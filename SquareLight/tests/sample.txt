@@ -1,0 +1,8 @@
+1000
+turn on 247,321 through 1053,1053
+turn off 347,295 through 1040,1139
+switch 507,661 through 1339,1271
+switch -44,123 through 849,376
+turn off 390,473 through 1341,1378
+turn on 672,628 through 856,821
+switch 181,443 through 387,882
