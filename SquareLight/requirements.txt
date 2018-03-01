@@ -1,0 +1,24 @@
+certifi==2018.1.18
+chardet==3.0.4
+click==6.7
+Flask==0.12.2
+flaskappbonus==1.0
+## !! Could not determine repository location
+FlaskSysInfo==0.1.0
+idna==2.6
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+numpy==1.13.1
+## !! Could not determine repository location
+Proj3==0.0.post0.dev1+ga67a110
+PyScaffold==3.0.1
+requests==2.18.4
+scikit-learn==0.19.0
+scipy==0.19.1
+-e git+https://github.com/Basschops/LED_tester.git@acc1494ce7e56ff684418181341e350fe8c3f6fd#egg=solved_led&subdirectory=squarelight
+SquareLights==0.1.0
+-e git+https://github.com/Basschops/Ass2Repo.git@4e5524ff34091a81cded40c94c6f9723ea6900a3#egg=sysinfo
+urllib3==1.22
+Werkzeug==0.14.1
+wincertstore==0.2

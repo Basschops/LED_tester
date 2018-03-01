@@ -18,7 +18,7 @@ setup(
     long_description=readme,
     author='Daragh OFarrell',
     author_email='daragh.ofarrell@ucdconnect.ie',
-    url='https://github.com/Basschops/Project3.git',
+    url='https://github.com/Basschops/LED_tester.git',
     license=license,
     packages=find_packages(include=['LightUp','tests']),
     entry_points={
