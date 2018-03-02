@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
 
-
 from itertools import count
 
 import requests
@@ -30,8 +29,6 @@ class LightGrid:
     def parse_file(self, file, lights, N):
         # This needs to be a variable!!!!
         pattern = re.compile(".*(turn on|turn off|switch)\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*through\s*([+-]?\d+)\s*,\s*([+-]?\d+).*")        
-        #pattern = re.compile(".*(turn on|turn off|switch)\s*([0-9]|[0-9][0-9]|[0-9][0-9][0-9]|1000)\s*,\s*([0-9]|[0-9][0-9]|[0-9][0-9][0-9]|1000)\s*through\s*([0-9]|[0-9][0-9]|[0-9][0-9][0-9]|1000),\s*([0-9]|[0-9][0-9]|[0-9][0-9][0-9]|1000).*")
-
         
         #Read in data file
         with open(file, 'r') as f:
@@ -43,7 +40,8 @@ class LightGrid:
             
             #If the instructions are valid proceed
             if match != None: 
-                print(match.group(0)) 
+                #print(match.group(0))
+                #return match.group(0) 
                 
                 coords = []
                 commands = []
@@ -76,28 +74,32 @@ class LightGrid:
                 
                 #Apply the valid command to the class    
                 lights.apply(lights, commands, x1, y1, x2, y2)
-
     
     def apply(self,lights, commands, x1, y1, x2, y2):
         '''Function that processes each valid command for the light grid'''
         #as there can be 1 or 2 terms for the instructions, the following branches are needed
+        #print(x1,y1,x2,y2)
         if commands[0] == 'turn' :
             if commands[1] == 'on':
-                for j in range(y1,y2):
-                    for i in range(x1,x2):
-                        lights[i,j]== True
+                for i in range(x1,x2+1):
+                    for j in range(y1,y2+1):
+                        lights[i,j]= True
+                        #print('A')
                 
             if commands[1] == 'off':
-                for j in range(y1, y2):
-                    for i in range(x1,x2):
-                        lights[i,j]== False
+                for i in range(x1, x2+1):
+                    for j in range(y1,y2+1):
+                        lights[i,j]= False
+                        
         elif commands[0] == 'switch':
-            for j in range(y1, y2):
-                for i in range(x1,x2):
+            for i in range(x1, x2+1):
+                for j in range(y1,y2+1):
+                    #print('B')
                     if lights[i,j]== True:
                         lights[i,j]=False
                     else:
                         lights[i,j] = True
+        #return lights
                         
     
     #Class to count the number of lights that are on
@@ -117,7 +119,7 @@ def construct():
 
     filename = args.input
     
-    #Check if input is a url
+    #Check if input is a URL
     if (urlparse(filename).netloc):
             #Create new local file with data from url
             urllib.request.urlretrieve(filename,"tempdata.txt")
@@ -126,7 +128,7 @@ def construct():
     with open(filename) as f:
         N = int(f.readline().strip())
         #Check that N is in range
-        if N>1E9:
+        if N>1E9 or N<0:
             print('N too large')
             exit()
     print("Array size, N is ",N)

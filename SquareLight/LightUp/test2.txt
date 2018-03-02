@@ -1,0 +1,2 @@
+10
+switch 1,2 through 3,4
