@@ -28,5 +28,16 @@ def test_switch():
     filename = 'test3.txt'
     lights = LightGrid(10)
     lights.parse_file(filename, lights, 10)  
-    assert lights.count(lights, 10) == 21    
+    assert lights.count(lights, 10) == 21
     
+def test_incorrect_instructions():
+    filename = 'test5.txt'
+    lights = LightGrid(10)
+    lights.parse_file(filename, lights, 10)  
+    assert lights.count(lights, 10) == 0
+    
+def test_out_of_range_instr():
+    filename = 'test6.txt'
+    lights = LightGrid(10)
+    lights.parse_file(filename, lights, 10)  
+    assert lights.count(lights, 10) == 45

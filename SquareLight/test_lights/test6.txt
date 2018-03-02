@@ -1,0 +1,3 @@
+10
+turn on 5,5 through 20,20
+switch -2,-2 through 1,9
