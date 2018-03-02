@@ -23,7 +23,7 @@ setup(
     packages=find_packages(include=['LightUp','tests']),
     entry_points={
         'console_scripts': [
-            'solved_led = LightUp.Lights:construct',
+            'solve_led = LightUp.Lights:construct',
         ],
     },    
     classifiers=[
@@ -35,7 +35,7 @@ setup(
     ],
     #install_requires=requirements.txt,
     zip_safe=False,
-    keywords='solved_led',
+    keywords='solve_led',
     #test_suite='tests',
 #     tests_require=test_requirements,
 #     setup_requires=setup_requirements,
