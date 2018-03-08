@@ -12,6 +12,8 @@ The instructions can be 'turn on', 'turn off' or 'switch'.  And each file should
 
 To install this program check the requirements list and install the required packages. Then when in the main folder with setup.py type 'pip install -e .' into the terminal and it should install wihtout issue.
 
+When the program is installed it can be executed by calling 'solve_led --input <<FILEPATH OR URL>>', naming the path to the instructions file.
+
 Created by Daragh O'Farrell
 daragh.ofarrell@ucdconnect.ie
 
