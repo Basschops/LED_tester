@@ -15,7 +15,6 @@ To install this program check the requirements list and install the required pac
 When the program is installed it can be executed by calling 'solve_led --input <<FILEPATH OR URL>>', naming the path to the instructions file.
 
 Created by Daragh O'Farrell
-daragh.ofarrell@ucdconnect.ie
 
 GitHub
 
