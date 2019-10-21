@@ -20,5 +20,5 @@ scipy==0.19.1
 SquareLights==0.1.0
 -e git+https://github.com/Basschops/Ass2Repo.git@4e5524ff34091a81cded40c94c6f9723ea6900a3#egg=sysinfo
 urllib3==1.22
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wincertstore==0.2
