@@ -7,7 +7,7 @@ flaskappbonus==1.0
 FlaskSysInfo==0.1.0
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 numpy==1.13.1
 ## !! Could not determine repository location
