@@ -19,6 +19,6 @@ scipy==0.19.1
 -e git+https://github.com/Basschops/LED_tester.git@acc1494ce7e56ff684418181341e350fe8c3f6fd#egg=solved_led&subdirectory=squarelight
 SquareLights==0.1.0
 -e git+https://github.com/Basschops/Ass2Repo.git@4e5524ff34091a81cded40c94c6f9723ea6900a3#egg=sysinfo
-urllib3==1.22
+urllib3==1.26.5
 Werkzeug==0.14.1
 wincertstore==0.2
