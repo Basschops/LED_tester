@@ -9,7 +9,7 @@ idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
-numpy==1.13.1
+numpy==1.22.0
 ## !! Could not determine repository location
 Proj3==0.0.post0.dev1+ga67a110
 PyScaffold==3.0.1
